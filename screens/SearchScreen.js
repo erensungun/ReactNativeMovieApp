@@ -39,7 +39,7 @@ export default function SearchScreen() {
         <View className="mx-4 mb-3 flex-row justify-between items-center border border-neutral-500 rounded-full">
             <TextInput
                 onChangeText={handleTextDebounce}
-                placeholder='Search Movie' 
+                placeholder='Film ara' 
                 placeholderTextColor={'lightgray'} 
                 className="pb-1 pl-6 flex-1 text-base font-semibold text-white tracking-wider" 
             />

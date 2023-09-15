@@ -84,7 +84,7 @@ export default function PersonScreen() {
             <View className="mx-3 p-4 mt-6 flex-row justify-evenly items-center bg-neutral-700 rounded-full">
               <View className="border-r-2 border-r-neutral-400 px-2 items-center">
                 <Text className="text-white font-semibold">
-                  Gender
+                  Cinsiyet
                 </Text>
                 <Text className="text-neutral-300 text-sm">
                   {
@@ -94,7 +94,7 @@ export default function PersonScreen() {
               </View>
               <View className="border-r-2 border-r-neutral-400 px-2 items-center">
                 <Text className="text-white font-semibold">
-                  Birthday
+                  Doğum Günü
                 </Text>
                 <Text className="text-neutral-300 text-sm">
                   {person?.birthday}
@@ -102,7 +102,7 @@ export default function PersonScreen() {
               </View>
               <View className="border-r-2 border-r-neutral-400 px-2 items-center">
                 <Text className="text-white font-semibold">
-                  Known For
+                  Tanınma
                 </Text>
                 <Text className="text-neutral-300 text-sm">
                   {person?.known_for_department}
@@ -110,7 +110,7 @@ export default function PersonScreen() {
               </View>
               <View className="px-2 items-center">
                 <Text className="text-white font-semibold">
-                  Popularity
+                  Popülerlik
                 </Text>
                 <Text className="text-neutral-300 text-sm">
                   {person?.popularity?.toFixed(2)} %
@@ -118,7 +118,7 @@ export default function PersonScreen() {
               </View>
             </View>
             <View className="my-6 mx-4 space-y-2">
-              <Text className="text-white text-lg">Biography</Text>
+              <Text className="text-white text-lg">Biyografi</Text>
               <Text className="text-neutral-400 tracking-widest">
                 {
                   person?.biography || 'N/A'
@@ -126,7 +126,7 @@ export default function PersonScreen() {
               </Text>
             </View>
             
-            <MovieList title={'Movies'} hideSeeAll={true} data={personMovies} />
+            <MovieList title={'Fimleri'} hideSeeAll={true} data={personMovies} />
           </View>
         )
       }
